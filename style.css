@@ -30,8 +30,11 @@ main p {
 
 .group {
   display: flex;
-  flex-direction: row;
-  margin-bottom: 20px;
+  flex-direction: column;
+  align-content: center;
+  margin-bottom: 100px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .item {
@@ -45,4 +48,18 @@ main p {
 
 .item-double {
   flex: 2;
+}
+
+.background-group {
+  background-color: rgb(120, 95, 72);
+  padding: 10px 20px 10px 20px;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 100px;
+}
+
+@media all and (min-width: 800px) {
+  .group {
+    flex-direction: row;
+  }
 }
